@@ -1,0 +1,178 @@
+[2019-02-27 12:07:31,097: WARNING/MainProcess] /Users/songpengliang/Library/Python/2.7/lib/python/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2019-02-27 12:07:31,279: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-02-27 12:07:31,289: INFO/MainProcess] mingle: searching for neighbors
+[2019-02-27 12:07:32,298: INFO/MainProcess] mingle: all alone
+[2019-02-27 12:07:32,314: WARNING/MainProcess] /Users/songpengliang/Library/Python/2.7/lib/python/site-packages/djcelery/loaders.py:133: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-02-27 12:07:32,314: WARNING/MainProcess] celery@songpengliangdeMacBook-Pro.local ready.
+[2019-02-27 12:07:51,044: INFO/MainProcess] Received task: xjmallapp.tasks.send[b5cfdb80-b23d-4c57-a287-956fc6b22182]
+[2019-02-27 12:07:53,047: ERROR/Worker-2] xjmallapp.tasks.send[b5cfdb80-b23d-4c57-a287-956fc6b22182]: 1111111
+[2019-02-27 12:07:53,048: WARNING/Worker-2] client-server
+[2019-02-27 12:07:53,049: WARNING/Worker-2] mobile=15201193149&apikey=81cadee3d99f15734ca02d65a4bfd78a&tpl_id=2734756
+[2019-02-27 12:07:53,062: INFO/Worker-2] Starting new HTTPS connection (1): sms.yunpian.com
+[2019-02-27 12:07:53,520: WARNING/Worker-2] server-client
+[2019-02-27 12:07:53,520: WARNING/Worker-2] {"code":0,"msg":"发送成功","count":1,"fee":0.05,"unit":"RMB","mobile":"15201193149","sid":37260445586}
+[2019-02-27 12:07:53,521: WARNING/Worker-2] get the status:
+[2019-02-27 12:07:53,521: WARNING/Worker-2] 200
+[2019-02-27 12:07:54,261: INFO/MainProcess] Task xjmallapp.tasks.send[b5cfdb80-b23d-4c57-a287-956fc6b22182] succeeded in 3.21495418483s: True
+
+worker: Hitting Ctrl+C again will terminate all running tasks!
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@songpengliangdeMacBook-Pro.local v3.1.26.post2 (Cipater)
+---- **** ----- 
+--- * ***  * -- Darwin-18.0.0-x86_64-i386-64bit
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         default:0x109cac810 (djcelery.loaders.DjangoLoader)
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . xjmallapp.tasks.send
+
+[2019-02-27 12:15:51,258: WARNING/MainProcess] /Users/songpengliang/Library/Python/2.7/lib/python/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2019-02-27 12:15:51,434: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-02-27 12:15:51,446: INFO/MainProcess] mingle: searching for neighbors
+[2019-02-27 12:15:52,457: INFO/MainProcess] mingle: all alone
+[2019-02-27 12:15:52,470: WARNING/MainProcess] /Users/songpengliang/Library/Python/2.7/lib/python/site-packages/djcelery/loaders.py:133: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-02-27 12:15:52,470: WARNING/MainProcess] celery@songpengliangdeMacBook-Pro.local ready.
+
+worker: Hitting Ctrl+C again will terminate all running tasks!
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@songpengliangdeMacBook-Pro.local v3.1.26.post2 (Cipater)
+---- **** ----- 
+--- * ***  * -- Darwin-18.0.0-x86_64-i386-64bit
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         default:0x10bcd77d0 (djcelery.loaders.DjangoLoader)
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     redis://localhost:6379/0
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . xjmallapp.tasks.send
+
+
+worker: Cold shutdown (MainProcess)
+[2019-02-27 12:16:03,323: WARNING/MainProcess] Exception
+[2019-02-27 12:16:03,323: WARNING/MainProcess] KeyError
+[2019-02-27 12:16:03,323: WARNING/MainProcess] :
+[2019-02-27 12:16:03,324: WARNING/MainProcess] KeyError(4686374336,)
+[2019-02-27 12:16:03,324: WARNING/MainProcess] in
+[2019-02-27 12:16:03,324: WARNING/MainProcess] <module 'threading' from '/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.pyc'>
+[2019-02-27 12:16:03,324: WARNING/MainProcess] ignored
+[2019-02-27 12:18:14,259: WARNING/MainProcess] /Users/songpengliang/Library/Python/2.7/lib/python/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2019-02-27 12:18:14,465: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2019-02-27 12:18:14,475: INFO/MainProcess] mingle: searching for neighbors
+[2019-02-27 12:18:15,483: INFO/MainProcess] mingle: all alone
+[2019-02-27 12:18:15,499: WARNING/MainProcess] /Users/songpengliang/Library/Python/2.7/lib/python/site-packages/djcelery/loaders.py:133: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-02-27 12:18:15,499: WARNING/MainProcess] celery@songpengliangdeMacBook-Pro.local ready.
+[2019-02-27 12:18:15,727: INFO/MainProcess] Received task: xjmallapp.tasks.send[543db44c-bf90-4239-bc8e-35e49c1974a4]
+[2019-02-27 12:18:15,729: INFO/MainProcess] Received task: xjmallapp.tasks.send[e8e21fad-27e0-446d-b203-6e8c0ca08f27]
+[2019-02-27 12:18:17,731: WARNING/Worker-1] client-server
+[2019-02-27 12:18:17,732: WARNING/Worker-1] mobile=15201193149&apikey=81cadee3d99f15734ca02d65a4bfd78a&tpl_id=2734756
+[2019-02-27 12:18:17,733: WARNING/Worker-3] client-server
+[2019-02-27 12:18:17,734: WARNING/Worker-3] mobile=15201193149&apikey=81cadee3d99f15734ca02d65a4bfd78a&tpl_id=2734756
+[2019-02-27 12:18:17,747: INFO/Worker-3] Starting new HTTPS connection (1): sms.yunpian.com
+[2019-02-27 12:18:17,747: INFO/Worker-1] Starting new HTTPS connection (1): sms.yunpian.com
+[2019-02-27 12:18:17,999: WARNING/Worker-1] server-client
+[2019-02-27 12:18:17,999: WARNING/Worker-1] {"code":0,"msg":"发送成功","count":1,"fee":0.05,"unit":"RMB","mobile":"15201193149","sid":37260859096}
+[2019-02-27 12:18:18,000: WARNING/Worker-1] get the status:
+[2019-02-27 12:18:18,000: WARNING/Worker-1] 200
+[2019-02-27 12:18:18,003: WARNING/Worker-3] server-client
+[2019-02-27 12:18:18,003: WARNING/Worker-3] {"http_status_code":400,"code":8,"msg":"同一手机号30秒内重复提交相同的内容","detail":"同一个手机号 15201193149 30秒内重复提交相同的内容"}
+[2019-02-27 12:18:18,004: WARNING/Worker-3] get the status:
+[2019-02-27 12:18:18,004: WARNING/Worker-3] 400
+[2019-02-27 12:18:18,005: INFO/MainProcess] Task xjmallapp.tasks.send[543db44c-bf90-4239-bc8e-35e49c1974a4] succeeded in 2.27625243319s: True
+[2019-02-27 12:18:18,007: INFO/MainProcess] Task xjmallapp.tasks.send[e8e21fad-27e0-446d-b203-6e8c0ca08f27] succeeded in 2.27658187784s: True
+
+worker: Hitting Ctrl+C again will terminate all running tasks!
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@songpengliangdeMacBook-Pro.local v3.1.26.post2 (Cipater)
+---- **** ----- 
+--- * ***  * -- Darwin-18.0.0-x86_64-i386-64bit
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         default:0x1054e37d0 (djcelery.loaders.DjangoLoader)
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     redis://localhost:6379/0
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . xjmallapp.tasks.send
+

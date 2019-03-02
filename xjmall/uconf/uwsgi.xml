@@ -1,0 +1,22 @@
+<uwsgi>
+    <socket>127.0.0.1:8762</socket>
+    <listen>64</listen>
+    <lazy-apps>true</lazy-apps>
+    <processes>4</processes>
+    <buffer-size>4096</buffer-size>
+    <post-buffering>4096</post-buffering>
+    <post-buffering-bufsize>4096</post-buffering-bufsize>
+    <max-requests>4096</max-requests>
+    <limit-as>4096</limit-as>
+    <reload-on-as>1024</reload-on-as>
+    <reload-on-rss>1024</reload-on-rss>
+    <close-on-exec />
+    <harakiri>60</harakiri>
+    <chdir>/var/www/site/xjmall_project/xjmall/</chdir>
+    <pythonpath>/var/www/site/xjmall_project/xjmall/</pythonpath>
+    <env>DJANGO_SETTINGS_MODULE=xjmall.settings</env>
+    <daemonize>/var/www/site/xjmall_project/xjmall/uconf/uwsgi.log</daemonize>
+    <pidfile>/var/www/site/xjmall_project/xjmall/uconf/uwsgi.pid</pidfile>
+    <wsgi-file>/var/www/site/xjmall_project/xjmall/xjmall/wsgi.py</wsgi-file>
+    <master>true</master>
+</uwsgi>

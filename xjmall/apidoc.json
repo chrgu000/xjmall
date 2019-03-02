@@ -1,0 +1,13 @@
+{
+  "name": "Innet API DOCS",
+  "version": "1.0.0",
+  "description": "Innet Server API example",
+  "title": "Innet Server API example",
+  "url" : "http://127.0.0.1:8000",
+  "sampleUrl": "http://127.0.0.1:8000",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true,
+    "forceLanguage": "zh_cn"
+  }
+}

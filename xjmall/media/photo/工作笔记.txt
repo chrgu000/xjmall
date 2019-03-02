@@ -1,0 +1,370 @@
+Mac密码：Splendid789
+海外服务器阿里云服务器重启postgresql ：/etc/init.d/postgresql restart
+重启django项目 在tiger用户下site目录下： uwsgi --reload uwsgi_ktv.pid
+启动uwsgi的命令uwsgi --xml uwsgi_ktv.xml
+关闭uwsgi命令uwsgi --stop uwsgi_ktv.pid
+
+重启nginx： /etc/init.d/nginx restart
+极光做国内消息推送，firebase做海外消息推送，环信做用户聊天，云信已经弃用
+项目服务器114.215.78.124 tiger 123456qq      root Aiwe2015    postgresql密码Aiwe2015
+海外服务器47.89.177.148  账号密码同上
+firebase的  920716sS +8618600467776 密码账号
+gaozexin003 彦祖翻墙密码
+tail -f xxx 是输出流查看
+
+django admin 的账号密码是 root 123456qq
+
+进入虚拟环境source ~/.virtualenvs/ktv/bin/activate
+
+user那个接口没有提交git  三方登录的接口没有提交git  海外服务器和git代码都没有首次登录的bug修复代码
+短信添加好友的那个所有内容（html url view）都没有提交到git
+
+前端代码地址:地址:https://gitee.com/jsrh/events  3296963354@qq.com  Aiwe123456qq
+
+阿里云网站账号密码splendid789789 15201193149splgq
+512275阿里云服务器远程连接密码
+阿里云密码Spl123456
+
+石油我的微信公众号openid   o4MN7xPE9fb-hUmDXl-mLnscyaTg
+
+4470.64
+抢红包域名：hb.chafanbao.com
+
+中石油：
+appid    wx13c787be64418985
+账号   1426197302@1426197302   
+密码  589061
+
+公众号：中国石油青海销售分公司
+账号：zsyqhxs
+密码：xm3697122
+
+wx13c787be64418985   appid
+be5f732d6a4f136c046274932080530f   app秘钥
+
+api秘钥 Qinghaizhongguoshiyoufeiyou12345
+
+商户号1426197302 
+
+
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx13c787be64418985&redirect_uri=http%3a%2f%2fhb.chafanbao.com%2fred%2f&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect
+
+
+eNgj__qTQB2ZXIaACAJHS
+
+_qTQB2ZXIaACAJHS
+
+
+
+
+音趴小程序的appid以及app秘钥
+wx43df1809aaaf0452
+4be5d3a867e3462b0966735764ebe2a3
+
+旧的，不用了 0f574f2e90f1cf7e8a9957290a04e9ed
+
+
+音趴的微信公众平台账号密码
+xcx01@picland.tech
+aiwe.123456
+
+一起唱唱唱的微信公众平台账号密码
+3296963354@qq.com
+Aiwe123456qq
+
+阿拉丁小程序账号密码、小神推
+18600467776
+aiwe2015
+
+
+
+7oSxajWCxSBWEnVtHJk7z9YVp9rRNXgRsX8vhN6vwPf
+cyYEA2EjWa7jcT529cQHoNQbC2gYz6hVl1uXsA2keAk
+音趴消息加密秘钥：SnEZaNhqn3YvrSGjmLGoU4PTvmLPAuWfelcTVC75uhl
+
+新 R1qHfzgHsJnwJxIwShcLa90aOOs20TPuMfWWtlCLBe7
+
+3ZAfcXEd6JKB45Vgc5Y23xNFTYQF8gOCf1N8VWV0UGF
+
+
+音趴我的微信openid    oUSWu4swfmeLY1il9oAe-ckUZ7uU
+
+手机号登录token  zroynwiKqQ95ZcblSBtUpxe0Fk2ThPsElp81Cw7OfbcaIy4LvDjRkXtGv6dd3Woz
+
+
+八个openid：
+o4MN7xGTEisi61Itl4GaIkha6hiY
+o4MN7xIgnQ-P3-Dvrhn3h4oPwIfc
+o4MN7xOsTUhIkdIB-72zhky4t1xA
+o4MN7xPAI0Ha_k0uxTPtf9EynrHE
+o4MN7xJHfASHUPCyj1LtoB9D5-oE
+o4MN7xOG3dh5J-ri2RMtgyjKuJwQ
+o4MN7xFY2gVRJYrnFBfchSPvtJ0s
+o4MN7xPdKlUOffLn3nQO24zhrxPI
+
+
+音趴邀请模板id：1-iSSM5EJc18CQ2mSzoa1dOuKDQ-3VCFajU5S1xoUJk
+一起唱唱唱邀请模板id：bppyxR4pIZAmJljEBVy4QHEiBarJ8fZeb6MbB3Yat8o
+
+我的码云账号密码：15201193149 15201193149splgq
+码云
+https://gitee.com/jsrh/projects
+3296963354@qq.com
+
+Aiwe123456qq
+
+码云的建奇的账号密码：
+rapospectre
+123456qq
+server {
+    listen       80;
+    listen [::]:80;
+    server_name  cyh-xj.chafanbao.com;
+    location ~ ^/(admin|docs|api-auth|system|shop|product|order|user)/ {      #uwsgi
+	uwsgi_pass 127.0.0.1:9878;
+        include uwsgi_params;
+	}
+
+    location / {                                        #vue单页面
+        alias /home/tiger/sites/gasStation_xj/project/dist/;
+        index index.html;
+    }	
+
+    location /MP_verify_j15kJn8FOFiEbk2n.txt {
+        alias /home/tiger/sites/gasStation_xj;
+        index MP_verify_j15kJn8FOFiEbk2n.txt;
+    }
+
+    location ^~ /static/ {                                  前端静态资源
+	root /home/tiger/sites/gasStation_xj/project/dist/;
+	}
+
+   location ^~ /statics/ {                 后端静态资源
+	root /home/tiger/sites/gasStation_xj/project/; 
+	}
+
+    location ~ ^/(images|javascript|js|css|flash|media)/ {         后端文件 
+
+        expires 30d;
+ #       root /home/tiger/sites/gasStation_xj/project/statics;
+        root /home/tiger/sites/gasStation_xj/project;
+    }
+
+}
+
+server {
+    listen       80;
+    listen [::]:80;
+    client_max_body_size 20m;
+
+    location / {
+        proxy_pass  http://127.0.0.1:8765;
+    }
+    location ^~ /static/ {
+            root ~/qizhen/static/;
+    }
+    location ^~ /static/ {
+            root ~/qizhen/;
+    }
+    location /page/{
+        alias /home/shadows/;
+        }
+
+    location ~ ^/(images|javascript|js|css|flash|media)/ {
+
+        root ~/qizhen/static/;
+    }
+}
+
+location ~ .*\.(gif|jpg|jpeg|png)$ {
+        root /data/erweima_img/img/;
+    }
+配置照片
+
+
+location ^~ /cyh/ {        http://hb.chafanbao.com/cyh/index.html
+            root /data/;   去/data/cyh添加heml、css等文件
+    }
+location ^~ /cyh/ {              http://hb.chafanbao.com/cyh/index.html
+            root /data/cs/;      去/data/cs/cyh添加heml、css等文件
+    }
+配置前端文件html、css、js等
+
+#coding:utf-8
+from django import VERSION
+if VERSION[0:2]>(1,3):
+    from django.conf.urls import patterns, url
+else:
+    from django.conf.urls.defaults import patterns, url
+
+from views import get_ueditor_controller
+
+urlpatterns = patterns('',
+    url(r'^controller/$',get_ueditor_controller)
+)
+
+
+http://wx.95504.net/MicroSide/login_n.html
+
+公司阿里云服务器账号密码：carry0716@163.com 0wy_794526
+腾讯云账号密码 zhouxinying@fibar.cn     123456.qq
+
+腾讯云的那几个服务器：
+应用安装目录
+/webapps
+# 切换到当前应用账户
+sudo su - station 
+# virtualenv激活
+source env/bin/activate
+# 更新项目源代码
+git pull origin develop
+# uwsgi进程的重启，需要使用root因此
+ubuntu@VM-0-13-ubuntu:~$ sudo killall -9 -u station uwsgi
+# 启动uwsgi
+(env)$ uwsgi --ini uwsgi.conf
+
+诺云直播账号密码 ： splendid789 15201193149splgq
+
+西安润滑公众号账号密码：qinenze_rhy@petrochina.com.cn    qinenze0919
+西安润滑的appid和app秘钥： wx586e2dfae97146a7  226f8be53f435e54247470a39f907ec6
+西安润滑公众号的微信支付商户号： 1503872291
+api秘钥：123456789012345678901234567890xa
+管理员密码：qinenze@0919
+我的西安润滑公众号openid：okVUi1mjd3OANKrnnsm_Tb4fhQhM
+
+
+on_giwEzAtrCglj6C0_u4QaKWPNQ   微信登录咪哆app的openid
+oUSWu4swfmeLY1il9oAe-ckUZ7uU  音趴openid
+o1o50s_tLYynqdrZStfJv5KwaA7k  一起唱唱唱
+
+
+
+oJPKV5EqIeId9PjhdoSiECmIWx4o   一起唱唱唱 体验版openid
+oJPKV5EqIeId9PjhdoSiECmIWx4o
+
+服务器 182.92.187.203 root Aiwe2015
+
+
+DjangoUeditor-1.8.143-py3.4.egg-info 
+
+
+
+微信支付商户号     1502560521 
+登录管理员密码  Spl123456!
+上海. 我的openid：ovHi-1Cq0eCJVbWco5itUsO-J-kg
+AppID     wx88249ae92f9f1c93
+8169adfb32f31b03075a6e0db8181264
+123456789012345678901234567890sh
+上海商户平台账号密码：1502560521    Spl123456!
+上海润滑油：
+账号：xsy_rhy@petrochina.com.cn
+密码：hdrhy123456
+
+广州
+wxf52aae93d30e81a2
+343c8cc1472bf2e014f172e8d386be2d
+商户号   1503693081
+广州商户平台登录账号：1503693081；密码：zql123456！
+api秘钥   123456789012345678901234567890gz
+广州润滑油公众平台
+账号：565023693@qq.com
+密码：znrhy28093820
+
+西北(兰州)：
+appid：wx53a0bb66744d6ff8
+secret：72714e74ea52de8a0917111bb7b4b324
+商户id： 1502484811 
+api_key：123456789012345678901234567890xb
+西北润滑油（兰州）
+公众号：
+账号：13099919907m@sina.cn
+密码：a19771110
+商户平台账号密码。好像没账号 Spl123456!
+
+新疆：
+账号：zhangwenlei_rhy@petrochina.com.cn密码：zwlcyy811026
+
+厦门：
+appid：wxce7f9db35c0a0c2d
+secret：b41242c47dc11cf552ef7d6a46a0e6ad
+商户id：1507129061
+api_key：kunlun2018phone05925221035kunlun
+厦门润滑油公众号
+账号：wqc_rhy@petrochina.com.cn
+密码：wqc5939459
+厦门商户平台账号密码：1507129061   kunlun-2018
+
+北京：
+appid：wx16a41be907db7b28
+secret：2b547dfaf73e7812d40bfd44c11fca58
+公众后台账号密码：账号：hemiao_rhy@petrochina.com.cn密码：Huabei_rhy123
+
+Mac下的启动mysql：mysql.start
+启动redis cd /usr/local/redis-5.0.0 src/redis-server redis.conf (大概文件叫这个名字)
+
+
+皮皮电脑登陆密码 jp57
+杞珍服务器ip密码：39.104.237.16 root Aiwe2015.   下的西安用户 account: xian password:123123
+xsc.chafanbao.com 西安项目域名
+http://cyh.chafanbao.com/page/
+该服务器启动nginx：/usr/sbin/nginx -c /etc/nginx/nginx.conf
+重启：/usr/sbin/nginx -s reload -c /etc/nginx/nginx.conf
+杀死nginx：pkill -9 nginx
+39 服务器mysql
+root
+WZT2861071wzt
+
+我的云片网账号apikey：38a8b3564b8d8df01d6117dd8bfbc01e
+我的云片网子账号xj的apikey：40f086992ab8cf29d3a3798cd5f8db2c
+
+qinenze的云片网
+秦恩泽账号apikey：a5efbb400b994482a8926e26930a9674
+订单审核子账号apikey：c372a58784544670163822d634174963
+配送通知子账号apikey：15236d31a418bf6141312b2310a64367
+结算通知子账号apikey：da20d13ce90a57739cd34864cc467a9b
+营销管理子账号apikey：2132f355dab401161741b23c23e311a9
+西安润滑油公司云片网
+18192313694
+qinenze123
+皮皮云片网账号密码：18511033324 123456qq
+皮皮的云片网的新疆终端店的子账号apikey：81cadee3d99f15734ca02d65a4bfd78a
+
+阿里云mysql名称账号密码：rm-uf60zh0jh0i6ca6dqvo.mysql.rds.aliyuncs.com root Spl123456!
+
+公司wifi密码：aiwe123456
+
+Win电脑的登录pin：15201193149
+
+49服务器启动postgresql：pg_ctl start -D /data/pg/data 数据库密码：Spl123456
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'xx',
+        'USER': 'postgres',  # Not used with sqlite3.
+        'PASSWORD': 'Spl123456',  # Not used with sqlite3.
+        'HOST': 'localhost',  # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5432',
+    }
+}
+
+七牛云建奇账号密码：dev_fibar@163.com 123456qq
+
+我的win电脑的teamviewer 账号密码：1167984003 950812
+
+nginx+uwsgi启动django的后台样式问题：去到它的包里面修改base.html文件去掉开头的<!DOCTYPE html>，也可能不是这个路径下的，想办法去找， /usr/local/lib/python2.7/dist-packages/django/contrib/admin/templates/admin 然后去django项目的静态文件目录下的statics也可能不是这个，看具体配置，增加django自带的admin下的各个css、js等目录
+
+一个域名下部署多个vue，以/store为例
+1、配置vue文件，详情见https://segmentfault.com/a/1190000011549083
+2、nginx文件中配置：
+location /store {
+            alias /home/xian/xjmall/dist_zyx/;
+            index index.html;
+            try_files $uri $uri/ /store/index.html;  #这个是为了原地刷新可以不报错404
+    }
+location ^~ /static2/ {
+            root /home/xian/xjmall/dist_zyx/;
+    }
+3、在dist目录里增加一个store（名字可改）目录，然后将static改名为static2并且放在store目录下
+4、重启nginx
+
